@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>張仕穎 — 員林市西區市民代表 ｜ 穎在您心，幸福起航</title>
+<meta name="description" content="張仕穎，台灣民眾黨提名員林市西區（第四選區）市民代表參選人。現任三義里里長，以「幸福家園，專業監督」為理念，由點到面擴大服務能量。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1f1c;
+  --ink-soft:#2a3d39;
+  --paper:#f6f1e6;
+  --paper-warm:#ede4d0;
+  --teal:#0d4a4f;
+  --teal-deep:#08363a;
+  --teal-bright:#1a7378;
+  --mint:#a8d5b8;
+  --mint-soft:#cfe7d4;
+  --accent:#d97645;
+  --line:#1a2522;
+  --gold:#b88c4a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans TC',sans-serif;
+  font-weight:400;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+.serif{font-family:'Noto Serif TC','Cormorant Garamond',serif}
+.mono{font-family:'DM Mono',monospace}
+
+/* === GRAIN OVERLAY === */
+body::before{
+  content:'';
+  position:fixed;inset:0;
+  pointer-events:none;
+  z-index:1000;
+  opacity:.04;
+  background-image:url("data:images/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+}
+
+/* === NAV === */
+nav.topnav{
+  position:fixed;top:0;left:0;right:0;
+  z-index:100;
+  padding:18px 40px;
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(246,241,230,.85);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(15,31,28,.08);
+}
+nav.topnav .brand{
+  display:flex;align-items:baseline;gap:14px;
+}
+nav.topnav .brand .num{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:24px;
+  color:var(--teal);
+  font-weight:500;
+}
+nav.topnav .brand .name{
+  font-family:'Noto Serif TC',serif;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.05em;
+}
+nav.topnav ul{
+  display:flex;gap:32px;list-style:none;
+}
+nav.topnav ul a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:13px;
+  letter-spacing:.15em;
+  font-weight:500;
+  position:relative;
+  padding:6px 0;
+  transition:color .2s;
+}
+nav.topnav ul a::after{
+  content:'';
+  position:absolute;
+  left:0;bottom:0;
+  width:0;height:1px;
+  background:var(--teal);
+  transition:width .3s ease;
+}
+nav.topnav ul a:hover{color:var(--teal)}
+nav.topnav ul a:hover::after{width:100%}
+@media (max-width:768px){
+  nav.topnav{padding:14px 20px}
+  nav.topnav ul{display:none}
+}
+
+/* === HERO === */
+.hero{
+  min-height:100vh;
+  position:relative;
+  padding:120px 40px 80px;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:60px;
+  align-items:center;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(168,213,184,.25), transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(13,74,79,.08), transparent 50%),
+    var(--paper);
+  overflow:hidden;
+}
+.hero::before{
+  content:'04';
+  position:absolute;
+  right:-40px;bottom:-120px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:42vw;
+  font-weight:500;
+  color:var(--teal);
+  opacity:.06;
+  line-height:.8;
+  letter-spacing:-.05em;
+  pointer-events:none;
+}
+.hero-text{
+  position:relative;
+  z-index:2;
+  animation:fadeUp 1s .2s both;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:11px;
+  letter-spacing:.3em;
+  font-weight:500;
+  color:var(--teal);
+  margin-bottom:36px;
+  text-transform:uppercase;
+}
+.hero-eyebrow::before{
+  content:'';width:32px;height:1px;background:var(--teal);
+}
+.hero h1{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(48px,7.5vw,108px);
+  line-height:.95;
+  letter-spacing:-.02em;
+  color:var(--ink);
+  margin-bottom:8px;
+}
+.hero h1 .first{display:block;color:var(--teal-deep)}
+.hero h1 .second{
+  display:block;
+  font-style:italic;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  color:var(--accent);
+  font-size:.85em;
+  margin-top:-.1em;
+}
+.hero-slogan{
+  margin-top:36px;
+  font-family:'Noto Serif TC',serif;
+  font-size:clamp(20px,2vw,28px);
+  font-weight:500;
+  color:var(--ink-soft);
+  line-height:1.4;
+  max-width:540px;
+}
+.hero-slogan .em{
+  color:var(--teal);
+  font-weight:700;
+  border-bottom:2px solid var(--accent);
+  padding-bottom:2px;
+}
+.hero-meta{
+  margin-top:48px;
+  display:flex;
+  gap:48px;
+  flex-wrap:wrap;
+}
+.hero-meta .item{
+  border-left:2px solid var(--teal);
+  padding-left:16px;
+}
+.hero-meta .item .label{
+  font-size:11px;
+  letter-spacing:.25em;
+  color:var(--ink-soft);
+  margin-bottom:6px;
+  text-transform:uppercase;
+}
+.hero-meta .item .value{
+  font-family:'Noto Serif TC',serif;
+  font-weight:700;
+  font-size:18px;
+}
+.hero-cta{
+  margin-top:56px;
+  display:flex;gap:20px;flex-wrap:wrap;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 32px;
+  font-size:14px;
+  letter-spacing:.15em;
+  font-weight:500;
+  text-decoration:none;
+  border:1px solid;
+  transition:all .3s;
+  cursor:pointer;
+}
+.btn-primary{
+  background:var(--teal);
+  color:var(--paper);
+  border-color:var(--teal);
+}
+.btn-primary:hover{
+  background:var(--teal-deep);
+  transform:translate(-2px,-2px);
+  box-shadow:6px 6px 0 var(--accent);
+}
+.btn-ghost{
+  background:transparent;
+  color:var(--ink);
+  border-color:var(--ink);
+}
+.btn-ghost:hover{
+  background:var(--ink);
+  color:var(--paper);
+}
+.hero-image-wrap{
+  position:relative;
+  z-index:2;
+  animation:fadeUp 1s .4s both;
+}
+.hero-image{
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  background:var(--ink);
+}
+.hero-image img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 20%;
+  filter:contrast(1.05) saturate(1.05);
+}
+.hero-image::after{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 60%,rgba(8,54,58,.4));
+  pointer-events:none;
+}
+.hero-image-tag{
+  position:absolute;
+  top:24px;left:-12px;
+  background:var(--accent);
+  color:var(--paper);
+  padding:8px 20px;
+  font-size:11px;
+  letter-spacing:.25em;
+  font-weight:700;
+  z-index:3;
+}
+.hero-image-frame{
+  position:absolute;
+  top:20px;left:20px;right:-20px;bottom:-20px;
+  border:1px solid var(--teal);
+  z-index:-1;
+}
+.hero-image-num{
+  position:absolute;
+  bottom:-30px;right:-10px;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:160px;
+  color:var(--teal);
+  font-weight:500;
+  line-height:.8;
+  z-index:3;
+}
+.hero-image-num small{
+  font-size:24px;
+  display:block;
+  letter-spacing:.3em;
+  font-style:normal;
+  color:var(--ink);
+  margin-top:8px;
+  font-family:'Noto Sans TC',sans-serif;
+  font-weight:500;
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:60px;padding-top:100px}
+  .hero-image-num{font-size:100px}
+  .hero::before{font-size:80vw}
+}
+
+/* === MARQUEE === */
+.marquee{
+  background:var(--ink);
+  color:var(--paper);
+  padding:18px 0;
+  overflow:hidden;
+  border-top:1px solid var(--teal);
+  border-bottom:1px solid var(--teal);
+}
+.marquee-track{
+  display:flex;
+  gap:60px;
+  animation:scroll 30s linear infinite;
+  white-space:nowrap;
+  font-family:'Noto Serif TC',serif;
+  font-size:18px;
+  letter-spacing:.2em;
+}
+.marquee-track span{
+  display:inline-flex;align-items:center;gap:60px;
+}
+.marquee-track .dot{color:var(--accent)}
+@keyframes scroll{
+  to{transform:translateX(-50%)}
+}
+
+/* === SECTION COMMON === */
+section{padding:120px 40px;position:relative}
+.container{max-width:1280px;margin:0 auto}
+.section-label{
+  display:flex;align-items:center;gap:16px;
+  font-size:11px;
+  letter-spacing:.3em;
+  font-weight:500;
+  color:var(--teal);
+  margin-bottom:24px;
+  text-transform:uppercase;
+}
+.section-label::before{
+  content:'';width:48px;height:1px;background:var(--teal);
+}
+.section-label .num{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:18px;
+}
+.section-title{
+  font-family:'Noto Serif TC',serif;
+  font-weight:900;
+  font-size:clamp(36px,5vw,64px);
+  line-height:1.1;
+  letter-spacing:-.01em;
+  margin-bottom:48px;
+}
+.section-title .accent{
+  font-style:italic;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  color:var(--accent);
+}
+
+/* === ABOUT === */
+.about{background:var(--paper-warm)}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:80px;
+  align-items:start;
+}
+.about-intro p{
+  font-family:'Noto Serif TC',serif;
+  font-size:18px;
+  line-height:1.9;
+  color:var(--ink-soft);
+  margin-bottom:24px;
+}
+.about-intro p:first-of-type::first-letter{
+  font-family:'Cormorant Garamond',serif;
+  font-size:80px;
+  font-weight:700;
+  float:left;
+  line-height:.85;
+  margin:8px 12px 0 -2px;
+  color:var(--teal);
+}
+.about-quote{
+  margin-top:48px;
+  padding:32px;
+  background:var(--paper);
+  border-left:4px solid var(--accent);
+  position:relative;
+}
+.about-quote::before{
+  content:'"';
+  position:absolute;
+  top:-20px;left:20px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:120px;
+  color:var(--teal);
+  line-height:1;
+  font-weight:700;
+}
+.about-quote p{
+  font-family:'Noto Serif TC',serif;
+  font-size:22px;
+  font-weight:500;
+  line-height:1.5;
+  padding-left:20px;
+  color:var(--ink);
+}
+.about-quote cite{
+  display:block;
+  margin-top:12px;
+  padding-left:20px;
+  font-style:normal;
+  font-size:13px;
+  letter-spacing:.2em;
+  color:var(--teal);
+}
+
+.about-stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1px;
+  background:var(--ink);
+  border:1px solid var(--ink);
+}
+.stat{
+  background:var(--paper-warm);
+  padding:32px 28px;
+  position:relative;
+}
+.stat .num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:64px;
+  font-weight:500;
+  line-height:1;
+  color:var(--teal);
+  letter-spacing:-.02em;
+}
+.stat .num small{
+  font-size:20px;
+  color:var(--ink-soft);
+  margin-left:4px;
+}
+.stat .label{
+  font-size:13px;
+  letter-spacing:.15em;
+  color:var(--ink-soft);
+  margin-top:12px;
+  font-weight:500;
+}
+
+.bio-list{
+  margin-top:32px;
+  border-top:1px solid var(--ink);
+}
+.bio-list .row{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:24px;
+  padding:20px 0;
+  border-bottom:1px solid rgba(15,31,28,.15);
+  align-items:start;
+}
+.bio-list .row .key{
+  font-size:12px;
+  letter-spacing:.25em;
+  color:var(--teal);
+  font-weight:700;
+  text-transform:uppercase;
+  padding-top:4px;
+}
+.bio-list .row .val{
+  font-family:'Noto Serif TC',serif;
+  font-size:16px;
+  color:var(--ink);
+  line-height:1.7;
+}
+@media (max-width:900px){
+  .about-grid{grid-template-columns:1fr;gap:48px}
+}
+
+/* === VISION === */
+.vision{
+  background:var(--teal-deep);
+  color:var(--paper);
+  position:relative;
+  overflow:hidden;
+}
+.vision::before{
+  content:'';
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(168,213,184,.15), transparent 40%),
+    radial-gradient(circle at 10% 90%, rgba(217,118,69,.1), transparent 40%);
+  pointer-events:none;
+}
+.vision .section-label{color:var(--mint)}
+.vision .section-label::before{background:var(--mint)}
+.vision .section-title{color:var(--paper)}
+.vision .section-title .accent{color:var(--mint)}
+.vision-lead{
+  max-width:760px;
+  font-family:'Noto Serif TC',serif;
+  font-size:22px;
+  line-height:1.7;
+  color:var(--mint-soft);
+  margin-bottom:80px;
+}
+.vision-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  position:relative;
+  z-index:2;
+}
+.vision-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(168,213,184,.2);
+  padding:48px 36px;
+  position:relative;
+  transition:all .4s;
+}
+.vision-card:hover{
+  background:rgba(168,213,184,.08);
+  border-color:var(--mint);
+  transform:translateY(-6px);
+}
+.vision-card .num{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:48px;
+  color:var(--mint);
+  font-weight:500;
+  line-height:1;
+  margin-bottom:24px;
+}
+.vision-card h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:26px;
+  font-weight:700;
+  color:var(--paper);
+  margin-bottom:16px;
+}
+.vision-card .sub{
+  font-size:13px;
+  letter-spacing:.2em;
+  color:var(--mint);
+  margin-bottom:24px;
+  font-weight:500;
+}
+.vision-card p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--mint-soft);
+}
+@media (max-width:900px){
+  .vision-grid{grid-template-columns:1fr}
+}
+
+/* === SERVICE GALLERY === */
+.service{background:var(--paper)}
+.service-intro{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  margin-bottom:80px;
+  align-items:end;
+}
+.service-intro p{
+  font-family:'Noto Serif TC',serif;
+  font-size:18px;
+  line-height:1.9;
+  color:var(--ink-soft);
+}
+.service-gallery{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:24px;
+}
+.service-item{
+  position:relative;
+  overflow:hidden;
+  background:var(--ink);
+  cursor:pointer;
+  transition:transform .4s;
+}
+.service-item:hover{transform:translateY(-4px)}
+.service-item img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .8s ease;
+}
+.service-item:hover img{transform:scale(1.05)}
+.service-item .overlay{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:32px 24px 24px;
+  background:linear-gradient(180deg,transparent,rgba(8,54,58,.95));
+  color:var(--paper);
+}
+.service-item .overlay .tag{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--paper);
+  padding:4px 12px;
+  font-size:10px;
+  letter-spacing:.2em;
+  margin-bottom:12px;
+  font-weight:700;
+}
+.service-item .overlay h4{
+  font-family:'Noto Serif TC',serif;
+  font-size:20px;
+  font-weight:700;
+  line-height:1.4;
+  margin-bottom:6px;
+}
+.service-item .overlay p{
+  font-size:13px;
+  color:var(--mint-soft);
+  line-height:1.5;
+}
+.service-item.large{grid-column:span 7;aspect-ratio:4/3}
+.service-item.medium{grid-column:span 5;aspect-ratio:4/3}
+.service-item.small{grid-column:span 4;aspect-ratio:1/1}
+@media (max-width:900px){
+  .service-intro{grid-template-columns:1fr;gap:24px}
+  .service-item.large,.service-item.medium,.service-item.small{
+    grid-column:span 12;
+    aspect-ratio:4/3;
+  }
+}
+
+/* === POLICY === */
+.policy{
+  background:var(--paper-warm);
+  position:relative;
+}
+.policy-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:start;
+}
+.policy-list{
+  list-style:none;
+}
+.policy-list li{
+  padding:36px 0;
+  border-bottom:1px solid rgba(15,31,28,.15);
+  display:grid;
+  grid-template-columns:60px 1fr;
+  gap:24px;
+  align-items:start;
+  transition:padding .3s;
+}
+.policy-list li:hover{padding-left:12px}
+.policy-list li:first-child{border-top:1px solid var(--ink)}
+.policy-list .num{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:32px;
+  color:var(--teal);
+  font-weight:500;
+  line-height:1;
+}
+.policy-list h4{
+  font-family:'Noto Serif TC',serif;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+.policy-list p{
+  font-size:15px;
+  line-height:1.7;
+  color:var(--ink-soft);
+}
+.policy-side{
+  position:sticky;
+  top:120px;
+  background:var(--ink);
+  color:var(--paper);
+  padding:48px 40px;
+  position:relative;
+}
+.policy-side::after{
+  content:'';
+  position:absolute;
+  top:16px;left:16px;right:-16px;bottom:-16px;
+  border:1px solid var(--accent);
+  z-index:-1;
+}
+.policy-side .quote-mark{
+  font-family:'Cormorant Garamond',serif;
+  font-size:120px;
+  color:var(--accent);
+  line-height:.5;
+  font-weight:700;
+}
+.policy-side h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  font-weight:700;
+  line-height:1.4;
+  margin:24px 0;
+}
+.policy-side p{
+  color:var(--mint-soft);
+  font-size:15px;
+  line-height:1.8;
+}
+.policy-side .signature{
+  margin-top:40px;
+  padding-top:24px;
+  border-top:1px solid rgba(168,213,184,.3);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.policy-side .signature .name{
+  font-family:'Noto Serif TC',serif;
+  font-size:24px;
+  font-weight:700;
+}
+.policy-side .signature .title{
+  font-size:12px;
+  letter-spacing:.2em;
+  color:var(--mint);
+}
+@media (max-width:900px){
+  .policy-grid{grid-template-columns:1fr;gap:48px}
+  .policy-side{position:static}
+}
+
+/* === CTA SECTION === */
+.cta{
+  background:var(--ink);
+  color:var(--paper);
+  padding:140px 40px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.cta::before{
+  content:'04';
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:60vw;
+  color:var(--teal);
+  opacity:.08;
+  line-height:1;
+  font-weight:500;
+  pointer-events:none;
+}
+.cta-content{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.cta .label{
+  font-size:11px;
+  letter-spacing:.4em;
+  color:var(--accent);
+  margin-bottom:32px;
+  font-weight:500;
+}
+.cta h2{
+  font-family:'Noto Serif TC',serif;
+  font-size:clamp(40px,6vw,84px);
+  font-weight:900;
+  line-height:1.05;
+  margin-bottom:32px;
+  color:var(--paper);
+}
+.cta h2 .accent{
+  font-style:italic;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  color:var(--mint);
+}
+.cta p{
+  font-family:'Noto Serif TC',serif;
+  font-size:20px;
+  color:var(--mint-soft);
+  margin-bottom:48px;
+  line-height:1.7;
+}
+.ballot{
+  display:inline-block;
+  border:2px solid var(--paper);
+  padding:24px 48px;
+  margin-top:32px;
+  position:relative;
+}
+.ballot .ballot-label{
+  position:absolute;
+  top:-12px;left:50%;transform:translateX(-50%);
+  background:var(--ink);
+  padding:0 16px;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--accent);
+}
+.ballot-row{
+  display:flex;align-items:center;gap:32px;
+}
+.ballot-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:80px;
+  font-weight:700;
+  color:var(--mint);
+  line-height:1;
+}
+.ballot-info{
+  text-align:left;
+}
+.ballot-info .name{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+.ballot-info .role{
+  font-size:13px;
+  letter-spacing:.2em;
+  color:var(--mint);
+}
+
+/* === FOOTER === */
+footer{
+  background:var(--teal-deep);
+  color:var(--mint-soft);
+  padding:80px 40px 40px;
+}
+.foot-grid{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;
+  margin-bottom:60px;
+}
+.foot-brand h3{
+  font-family:'Noto Serif TC',serif;
+  font-size:32px;
+  color:var(--paper);
+  margin-bottom:8px;
+}
+.foot-brand .slogan{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  color:var(--mint);
+  margin-bottom:24px;
+}
+.foot-brand p{font-size:14px;line-height:1.7}
+.foot-col h5{
+  font-size:11px;
+  letter-spacing:.3em;
+  color:var(--mint);
+  margin-bottom:20px;
+  font-weight:500;
+}
+.foot-col ul{list-style:none}
+.foot-col li{
+  padding:8px 0;
+  font-size:14px;
+}
+.foot-col a{
+  color:var(--mint-soft);
+  text-decoration:none;
+  transition:color .2s;
+}
+.foot-col a:hover{color:var(--paper)}
+.foot-bottom{
+  max-width:1280px;
+  margin:0 auto;
+  padding-top:32px;
+  border-top:1px solid rgba(168,213,184,.2);
+  display:flex;justify-content:space-between;
+  font-size:12px;
+  letter-spacing:.1em;
+  flex-wrap:wrap;gap:16px;
+}
+@media (max-width:768px){
+  .foot-grid{grid-template-columns:1fr;gap:40px}
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .9s cubic-bezier(.2,.8,.2,1);
+}
+.reveal.in{
+  opacity:1;
+  transform:translateY(0);
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="num">04</span>
+    <span class="name">張仕穎 ｜ CHANG SHIH-YING</span>
+  </div>
+  <ul>
+    <li><a href="#about">認識仕穎</a></li>
+    <li><a href="#vision">理念主張</a></li>
+    <li><a href="#service">服務實績</a></li>
+    <li><a href="#policy">政見規劃</a></li>
+    <li><a href="#cta">支持我們</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">2026 員林市西區市民代表 ｜ 第四選區</div>
+    <h1>
+      <span class="first">張仕穎</span>
+      <span class="second">Chang Shih-Ying</span>
+    </h1>
+    <div class="hero-slogan">
+      <span class="em">穎</span>在您心，<span class="em">幸福</span>起航。<br>
+      改變，從我們的選票開始。
+    </div>
+    <div class="hero-meta">
+      <div class="item">
+        <div class="label">Party 政黨</div>
+        <div class="value">台灣民眾黨</div>
+      </div>
+      <div class="item">
+        <div class="label">District 選區</div>
+        <div class="value">員林市西區・第四選區</div>
+      </div>
+      <div class="item">
+        <div class="label">Now 現職</div>
+        <div class="value">員林市三義里 里長</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a href="#vision" class="btn btn-primary">了解政見 →</a>
+      <a href="#cta" class="btn btn-ghost">支持仕穎</a>
+    </div>
+  </div>
+  <div class="hero-image-wrap">
+    <div class="hero-image">
+      <span class="hero-image-tag">2026 ELECTION</span>
+      <div class="hero-image-frame"></div>
+      <img src="images/hero.jpg" alt="張仕穎形象照">
+    </div>
+    <div class="hero-image-num">04<small>NO. FOUR</small></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>幸福家園 <span class="dot">✦</span> 專業監督 <span class="dot">✦</span> 由點到面 <span class="dot">✦</span> 擴大服務 <span class="dot">✦</span> 在地深耕 <span class="dot">✦</span> 治家如治里 <span class="dot">✦</span></span>
+    <span>幸福家園 <span class="dot">✦</span> 專業監督 <span class="dot">✦</span> 由點到面 <span class="dot">✦</span> 擴大服務 <span class="dot">✦</span> 在地深耕 <span class="dot">✦</span> 治家如治里 <span class="dot">✦</span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label"><span class="num">01.</span> About <span style="color:var(--ink-soft)">— 認識張仕穎</span></div>
+    <h2 class="section-title reveal">
+      從<span class="accent">里長</span>到代表，<br>
+      把家的<span class="accent">溫度</span>帶進議事廳。
+    </h2>
+
+    <div class="about-grid">
+      <div class="about-intro reveal">
+        <p>出生於民國78年，員林在地子弟，畢業於國立台灣體育運動大學體育系。35歲投身公共服務，於民國112年12月接任員林市三義里里長，從里民的水溝、路燈、籃球場做起，一步一步把里政推上軌道。</p>
+        <p>現為彰化縣議會第二十屆役政顧問、彰化縣第三屆青年諮詢委員會成員，並深耕員林國際青商會（JCI）、華欣同濟會等在地社團，是員林青年世代與地方傳統價值之間的對話橋樑。</p>
+
+        <div class="about-quote">
+          <p>「治家如治里，治里如治區。<br>唯有照顧好家庭，才有能力守護鄰里。」</p>
+          <cite>— 張仕穎</cite>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="num">36<small>歲</small></div>
+            <div class="label">青年世代代表</div>
+          </div>
+          <div class="stat">
+            <div class="num">2<small>+</small></div>
+            <div class="label">年里長服務經驗</div>
+          </div>
+          <div class="stat">
+            <div class="num">50<small>+</small></div>
+            <div class="label">志工團隊規模</div>
+          </div>
+          <div class="stat">
+            <div class="num">04</div>
+            <div class="label">員林市西區選區</div>
+          </div>
+        </div>
+
+        <div class="bio-list">
+          <div class="row">
+            <div class="key">學 歷</div>
+            <div class="val">國立台灣體育運動大學<br>體育學系 學士</div>
+          </div>
+          <div class="row">
+            <div class="key">現 職</div>
+            <div class="val">員林市三義里 里長<br>（112.12.25 至今）</div>
+          </div>
+          <div class="row">
+            <div class="key">公 職</div>
+            <div class="val">彰化縣議會第二十屆役政顧問<br>彰化縣第三屆青年諮詢委員會委員</div>
+          </div>
+          <div class="row">
+            <div class="key">社 團</div>
+            <div class="val">員林國際青商會（JCI）會員<br>華欣同濟會 會員<br>三義社區環保志工隊<br>員林國中校友會</div>
+          </div>
+          <div class="row">
+            <div class="key">家 庭</div>
+            <div class="val">已婚，育有一子一女<br>穩定的家是公共服務最強大的後盾</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="vision" id="vision">
+  <div class="container">
+    <div class="section-label"><span class="num">02.</span> Vision <span style="color:var(--mint-soft)">— 核心理念</span></div>
+    <h2 class="section-title reveal">
+      幸福家園，<br><span class="accent">專業監督</span>。
+    </h2>
+    <p class="vision-lead reveal">
+      以「幸福家庭」為出發點，把里長任內的細緻服務帶進市代表會。<br>
+      讓員林西區的每一條街、每一個家庭，都被看見、被照顧。
+    </p>
+
+    <div class="vision-grid">
+      <div class="vision-card reveal">
+        <div class="num">i.</div>
+        <div class="sub">CIVIC INFRASTRUCTURE</div>
+        <h3>民生優先</h3>
+        <p>關注西區基礎設施建設，將里長任內最重視的環境、交通議題，提升至市級層面討論。從里民的日常需求出發，讓每一條巷弄都有被改善的可能。</p>
+      </div>
+      <div class="vision-card reveal">
+        <div class="num">ii.</div>
+        <div class="sub">FISCAL TRANSPARENCY</div>
+        <h3>新政實踐</h3>
+        <p>落實民眾黨「公開透明、財政紀律」的政治主張。嚴格審查預算，確保市民納稅錢每一分都用在刀口上，不被人情綁架，不為派系服務。</p>
+      </div>
+      <div class="vision-card reveal">
+        <div class="num">iii.</div>
+        <div class="sub">GENERATIONAL BRIDGE</div>
+        <h3>世代橋樑</h3>
+        <p>結合青商會與校友會的青年活力，串連在地長輩的傳統價值。讓員林不只是長者安居的故鄉，也是青年世代願意回家的家園。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section class="service" id="service">
+  <div class="container">
+    <div class="section-label"><span class="num">03.</span> Service <span style="color:var(--ink-soft)">— 服務實績</span></div>
+    <div class="service-intro">
+      <h2 class="section-title reveal" style="margin-bottom:0">
+        服務<span class="accent">不靠選舉</span>，<br>
+        承諾<span class="accent">每天兌現</span>。
+      </h2>
+      <p class="reveal">
+        擔任三義里里長兩年多以來，秉持「活潑服務、實事求是」的精神，從一支籃網、一條巷弄、一場社區活動做起。這些是平常的日子，也是公共服務的本質——把該做的事，做好。
+      </p>
+    </div>
+
+    <div class="service-gallery">
+      <div class="service-item large reveal">
+        <img src="images/basketball.jpg" alt="自費更換社區籃網">
+        <div class="overlay">
+          <span class="tag">里政服務 ・ 社區設施</span>
+          <h4>球場、籃網、社區的小事</h4>
+          <p>自費更換社區老舊籃網，因為孩子的笑聲，從來不是小事。</p>
+        </div>
+      </div>
+      <div class="service-item medium reveal">
+        <img src="images/cleanup.jpg" alt="社區環境整理">
+        <div class="overlay">
+          <span class="tag">環保志工 ・ 環境整理</span>
+          <h4>清理巷弄，從不缺席</h4>
+          <p>三義社區環保志工隊一員，髒亂、落葉、廢棄物，能彎下腰就彎下腰。</p>
+        </div>
+      </div>
+      <div class="service-item medium reveal">
+        <img src="images/community.jpg" alt="里鄰長文康活動">
+        <div class="overlay">
+          <span class="tag">在地連結 ・ 公所合作</span>
+          <h4>陪長輩走出去</h4>
+          <p>協辦員林市公所115年度里鄰長文康活動，凝聚社區、傳遞人情。</p>
+        </div>
+      </div>
+      <div class="service-item large reveal">
+        <img src="images/mothersday.jpg" alt="母親節傳統美食體驗">
+        <div class="overlay">
+          <span class="tag">節慶活動 ・ 婦幼關懷</span>
+          <h4>母親節，傳統美食體驗</h4>
+          <p>串連社區媽媽們，在傳統米食的揉捏間，把節慶的溫度交回里民手中。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLICY -->
+<section class="policy" id="policy">
+  <div class="container">
+    <div class="section-label"><span class="num">04.</span> Policy <span style="color:var(--ink-soft)">— 政見規劃</span></div>
+    <h2 class="section-title reveal">
+      具體可執行的<br>
+      <span class="accent">五項承諾</span>。
+    </h2>
+
+    <div class="policy-grid">
+      <ol class="policy-list">
+        <li class="reveal">
+          <div class="num">01</div>
+          <div>
+            <h4>由點到面，擴大服務能量</h4>
+            <p>把里長任內處理過的個案經驗，整理為可被市代會檢視的議題庫。每一個里民的陳情，都不該只停留在里辦公處的抽屜裡。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">02</div>
+          <div>
+            <h4>嚴審預算，財政紀律先行</h4>
+            <p>落實民眾黨「公開透明」主張，要求市公所預算編列邏輯清楚、執行成果可追蹤，杜絕綁樁式工程與不必要的儀式性支出。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">03</div>
+          <div>
+            <h4>環境與交通議題市級化</h4>
+            <p>西區舊巷弄、人行空間、夜間照明、雨水下水道——把基層常見的問題，從里級層次推升到市級的盤點與整治計畫。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">04</div>
+          <div>
+            <h4>婦幼與長者照顧並重</h4>
+            <p>承襲里長任內對婦幼福利、長者關懷的堅持，推動友善育兒空間、社區共餐、健康促進方案在西區的落實。</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="num">05</div>
+          <div>
+            <h4>青年參政與在地對話</h4>
+            <p>結合員林國際青商會、華欣同濟會、員林國中校友會，建構青年回鄉、世代溝通的常設平台，讓員林留得住下一代。</p>
+          </div>
+        </li>
+      </ol>
+
+      <aside class="policy-side reveal">
+        <div class="quote-mark">"</div>
+        <h3>讓第三勢力，<br>在員林西區，<br>落地生根。</h3>
+        <p>擔任員林市三義里里長期間，始終秉持「活潑服務、實事求是」的精神。此次代表民眾黨參選員林市西區市民代表，期許能將家庭的溫暖與圓滿，擴大到整個員林西區，為市民爭取更幸福的生活環境。</p>
+        <div class="signature">
+          <span class="name">張仕穎</span>
+          <span class="title">CANDIDATE 04</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="cta-content">
+    <div class="label">2026 員林市西區市民代表選舉</div>
+    <h2>
+      改變，<br>
+      從我們的<span class="accent">選票</span>開始。
+    </h2>
+    <p>
+      一張選票，讓員林西區擁有一位真正願意走進巷弄、<br>
+      願意彎腰服務、也願意專業監督的年輕代表。
+    </p>
+
+    <div class="ballot">
+      <span class="ballot-label">YOUR BALLOT</span>
+      <div class="ballot-row">
+        <div class="ballot-num">04</div>
+        <div class="ballot-info">
+          <div class="name">張 仕 穎</div>
+          <div class="role">員林市西區市民代表 ・ 民眾黨提名</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <h3>張仕穎</h3>
+      <div class="slogan">Chang Shih-Ying ・ Yuanlin District 04</div>
+      <p>2026年員林市西區（第四選區）市民代表參選人。<br>台灣民眾黨提名・現任三義里里長。<br>以「幸福家園，專業監督」為核心理念，由點到面擴大服務能量。</p>
+    </div>
+    <div class="foot-col">
+      <h5>QUICK LINKS</h5>
+      <ul>
+        <li><a href="#about">認識仕穎</a></li>
+        <li><a href="#vision">核心理念</a></li>
+        <li><a href="#service">服務實績</a></li>
+        <li><a href="#policy">政見規劃</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>CONTACT 聯繫</h5>
+      <ul>
+        <li>競選總部：員林市（待公告）</li>
+        <li>服務專線：（待設置）</li>
+        <li>電子信箱：mrshihyingg@gmail.com</li>
+        <li>Facebook：張仕穎（待連結）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 張仕穎競選辦公室 ・ 台灣民眾黨員林市西區提名候選人</span>
+    <span>YUANLIN ・ DISTRICT 04 ・ 2026</span>
+  </div>
+</footer>
+
+<script>
+// 滾動觸發顯示
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// 平滑捲動
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const id=a.getAttribute('href');
+    if(id.length>1){
+      const t=document.querySelector(id);
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+    }
+  });
+});
+</script>
+
+</body>
+</html>
